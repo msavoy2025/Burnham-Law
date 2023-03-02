@@ -1,0 +1,127 @@
+/* ------------------------------------------------------------ *\
+	Section Features
+\* ------------------------------------------------------------ */
+
+.section-features {
+	padding: 1px 0 102px;
+	position: relative;
+	z-index: 5;
+
+	@include breakpoint-down(tablet) {
+		padding: 60px 0;
+	}
+
+	.section__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-top: -30px;
+
+		@include breakpoint-down(tablet) {
+			margin: 0;
+			display: block;
+		}
+	}
+
+	.section__aside {
+		width: 270px;
+		min-width: 270px;
+		border-left: 1px solid $c-black;
+		padding-left: 61px;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			min-width: 0;
+			margin: 0 0 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding-left: 30px;
+		}
+	}
+
+	.section__aside h6 {
+		font-family: $ff-trade-gothic;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: .1em;
+		line-height: 1.35;
+		margin-top: -5px;
+		margin-bottom: 29px;
+	}
+
+	.section__content {
+		width: 100%;
+		padding: 40px 0 0 123px;
+
+		@include breakpoint-down(tablet) {
+			padding: 0;
+		}
+	}
+
+	.section__content h2 {
+		max-width: 660px;
+		font-size: 80px;
+		line-height: .75;
+		margin-bottom: 51px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 60px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 45px;
+		}
+	}
+
+	.section__content h5 {
+		margin-bottom: 42px;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Features Alt
+\* ------------------------------------------------------------ */
+
+.section-features--alt {
+	padding: 96px 0 50px;
+
+	@include breakpoint-down(tablet) {
+		padding: 60px 0;
+	}
+
+	.section__inner {
+		margin-top: 0;
+		align-items: flex-start;
+	}
+
+	.section__content {
+		padding-top: 0;
+		margin-top: -5px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 0;
+		}
+	}
+
+	.section__content h2 {
+		margin-bottom: 32px;
+	}
+
+	.section__content h5 {
+		margin-bottom: 26px;
+	}
+
+	.section__content > p {
+		max-width: 390px;
+		margin-bottom: 42px;
+	}
+
+	.section__aside {
+		padding-left: 55px;
+
+		@include breakpoint-down(mobile) {
+			padding-left: 30px;
+		}
+	}
+}

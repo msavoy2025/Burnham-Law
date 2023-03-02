@@ -1,0 +1,179 @@
+/* ------------------------------------------------------------ *\
+	Section Team Members
+\* ------------------------------------------------------------ */
+
+.section-team-members {
+	padding: 140px 0 65px;
+	position: relative;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 282px;
+		background: url(../images/burnham-stripes.png) repeat center bottom/100px 75px;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.section__inner {
+		position: relative;
+		z-index: 5;
+	}
+
+	.section__head {
+		text-align: center;
+		margin-bottom: 125px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__actions {
+		padding: 48px 62px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include breakpoint-down(tablet) {
+			padding: 48px 0 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.section__actions h5 {
+		font-size: 33px;
+		line-height: 1.33;
+		color: $c-black;
+		margin-bottom: 0;
+
+		@include breakpoint-down(small-desktop) {
+			font-size: 26px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Team Members Alt
+\* ------------------------------------------------------------ */
+
+.section-team-members--alt {
+	padding: 45px 0 83px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 342px;
+		background: #f1f1f1;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	&:after {
+		height: 342px;
+	}
+
+	.section__head {
+		margin-bottom: 58px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__head h2 {
+		font-size: 72px;
+		margin-bottom: 50px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.section__head h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+	}
+
+	.section__actions {
+		padding-top: 77px;
+		padding-right: 64px;
+		color: $c-dark;
+		position: relative;
+
+		@include breakpoint-down(mobile) {
+			padding: 50px 0 0;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Team Members New
+\* ------------------------------------------------------------ */
+
+.section-team-members--new {
+	padding: 130px 0 83px;
+	position: relative;
+	z-index: 2;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	&:before {
+		content: '';
+		height: 692px;
+		width: 100%;
+		position: absolute;
+		top: -260px;
+		left: 0;
+		background: url(../images/temp/line-pattern-large.png) repeat center bottom;
+		pointer-events: none;
+
+		@include breakpoint-down(mobile) {
+			height: 300px;
+			top: -150px;
+		}
+	}
+
+	&:after {
+		display: none;
+	}
+
+	.section__head {
+		margin-bottom: 113px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+}

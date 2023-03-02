@@ -1,0 +1,85 @@
+/* ------------------------------------------------------------ *\
+	Clock
+\* ------------------------------------------------------------ */
+
+.clock {
+	font-family: $ff-trade-gothic;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 35px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: $c-white;
+	margin-bottom: 88px;
+	position: relative;
+	display: inline-block;
+	padding-right: 40px;
+
+	@include breakpoint-down(mobile) {
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+
+	&:before,
+	&:after {
+		width: 38px;
+		height: 22px;
+		text-align: center;
+		color: $c-white;
+		position: absolute;
+		right: 0;
+		font-family: $ff-trade-gothic;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: -.02em;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include breakpoint-down(mobile) {
+			font-size: 14px;
+		}
+	}
+
+	&:before {
+		content: 'A.M.';
+		background: $c-green;
+		color: $c-dark;
+		top: 3px;
+	}
+
+	&:after {
+		content: 'P.M.';
+		bottom: -3px;
+	}
+
+	.letter {
+		font-size: 28px;
+		display: inline-block;
+		background: $c-white;
+		color: $c-dark;
+		margin: 0 3px;
+		width: 34px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		position: relative;
+		top: 3px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			width: 28px;
+		}
+	}
+
+	&.clock--afternoon:before {
+		color: $c-white;
+		background-color: transparent;
+	}
+
+	&.clock--afternoon:after {
+		color: $c-dark;
+		background: $c-green;
+	}
+}

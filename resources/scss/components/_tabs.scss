@@ -1,0 +1,111 @@
+/* ------------------------------------------------------------ *\
+	Tabs
+\* ------------------------------------------------------------ */
+
+.tabs {
+	position: relative;
+	min-height: 700px;
+
+	@include breakpoint-down(tablet) {
+		display: none;
+	}
+
+	.tabs__head {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.tabs__nav {
+		width: 250px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.tabs__nav > h6 {
+		text-align: center;
+		margin-bottom: 0;
+		padding: 20px 0;
+		background: #f1f1f1;
+	}
+
+	.tabs__nav li + li {
+		margin-top: 36px;
+	}
+
+	.tabs__nav a {
+		height: 204px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-decoration: none;
+		padding: 24px;
+		background: #f1f1f1;
+		border: 1px solid $c-dark;
+		box-shadow: 0 0 0 1px transparent;
+		transition: background .4s, color .4s, box-shadow .4s;
+
+		&:hover {
+			background: $c-dark;
+			color: $c-white;
+			border-color: $c-green;
+			box-shadow: 0 0 0 1px $c-green;
+		}
+	}
+
+	.tabs__nav h4 {
+		font-size: 34px;
+		letter-spacing: -.02em;
+		line-height: .75;
+	}
+
+	.tabs__nav p {
+		font-family: $ff-trade-gothic;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+	}
+
+	.tabs__nav li.current a {
+		background: $c-dark;
+		color: $c-white;
+		border-color: $c-green;
+		box-shadow: 0 0 0 1px $c-green;
+	}
+
+	.tabs__body {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: calc(100% - 600px);
+		text-align: center;
+	}
+
+	.tab {
+		display: none;
+		padding: 59px 0;
+	}
+
+	.tab.current {
+		display: block;
+	}
+
+	.tab h2 {
+		font-size: 72px;
+		margin-bottom: 29px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+		}
+	}
+
+	.tab p {
+		max-width: 406px;
+		margin: 0 auto;
+	}
+}

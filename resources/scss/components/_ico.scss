@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+.ico {
+	font-size: 0;
+	line-height: 0;
+	text-indent: -4004px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.ico-play {
+	display: inline-block;
+	vertical-align: middle;
+	width: 34px;
+	height: 34px;
+	background: url(../images/icons/ico-play@2x.png) no-repeat center center/contain;
+}
+
+.ico-star {
+	display: inline-block;
+	vertical-align: middle;
+	width: 12px;
+	height: 11px;
+	background: url(../images/icons/ico-star@2x.png) no-repeat center center/contain;
+}
+
+.ico-arrow-right {
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	background: url(../images/icons/ico-arrow-right-large.svg) no-repeat center center/contain;
+
+	@include breakpoint-down(mobile) {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+.ico-arrow-left {
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	background: url(../images/icons/ico-arrow-right-large.svg) no-repeat center center/contain;
+	transform: rotate(180deg);
+
+	@include breakpoint-down(mobile) {
+		width: 14px;
+		height: 14px;
+	}
+}

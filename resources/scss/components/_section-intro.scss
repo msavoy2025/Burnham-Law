@@ -1,0 +1,224 @@
+/* ------------------------------------------------------------ *\
+	Section Intro
+\* ------------------------------------------------------------ */
+
+.section-intro {
+	position: relative;
+	z-index: 10;
+
+	@include breakpoint-down(mobile) {
+		z-index: 2;
+	}
+
+	.section__container {
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 976px;
+			height: 41%;
+			pointer-events: none;
+			border-width: 0 1px 1px 1px;
+			border-style: solid;
+			border-color: $c-white;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 5;
+			pointer-events: none;
+
+			@include breakpoint-down(tablet) {
+				width: 100%;
+			}
+
+			@include breakpoint-down(mobile) {
+				display: none;
+			}
+		}
+
+		&:after {
+			content: '';
+			width: 56px;
+			height: 56px;
+			background: $c-dark;
+			position: absolute;
+			bottom: -28px;
+			left: 50%;
+			transform: translateX(-50%) rotate(45deg);
+			border-width: 0 1px 1px 0;
+			border-style: solid;
+			border-color: $c-white;
+			z-index: 5;
+			pointer-events: none;
+
+			@include breakpoint-down(mobile) {
+				display: none;
+			}
+		}
+	}
+
+	.section__content {
+		text-align: center;
+		width: 100%;
+		max-width: 740px;
+		position: relative;
+	}
+
+	.section__entry {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		color: $c-white;
+		padding-top: 22.4%;
+
+		@include breakpoint-down(mobile) {
+			position: relative;
+			padding: 0 10px;
+			margin-top: -100px;
+		}
+	}
+
+	h1 {
+		letter-spacing: -.02em;
+		margin-bottom: 52.9%;
+
+		@include breakpoint-down(large-desktop) {
+			margin-bottom: 58.9%;
+		}
+
+		@include breakpoint-down(small-desktop) {
+			margin-bottom: 56.9%;
+		}
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 55%;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+
+	h3 {
+		letter-spacing: -.02em;
+		line-height: .75;
+		font-family: $ff-futura;
+		margin-bottom: 43px;
+	}
+
+	h6 {
+		letter-spacing: .27em;
+		margin-bottom: 30px;
+	}
+
+	.section__entry p {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.section__inner {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding-bottom: 260px;
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 50px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 40%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100vw + 2px);
+			height: 140px;
+			background: url(../images/temp/intro-pattern-1.png) repeat center top;
+			z-index: -2;
+			pointer-events: none;
+
+			@include breakpoint-down(mobile) {
+				display: none;
+			}
+		}
+
+		&:after {
+			content: '';
+			background: $c-dark;
+			position: absolute;
+			bottom: -5px;
+			height: 41%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100vw;
+			z-index: -1;
+			pointer-events: none;
+
+			@include breakpoint-down(mobile) {
+				height: calc(100% - 150px);
+			}
+		}
+	}
+
+	.section__aside {
+		margin: 0 auto 0 0;
+		min-width: 190px;
+		width: 190px;
+		height: 520px;
+		font-family: $ff-helvetica-display;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: .27em;
+		text-transform: uppercase;
+		position: relative;
+		opacity: .25;
+
+		@include breakpoint-down(tablet) {
+			min-width: 80px;
+			width: 80px;
+		}
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
+	.section__aside p {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 100%;
+		text-align: center;
+
+		writing-mode: vertical-rl;
+	}
+
+	.section__aside--right {
+		margin: 0 0 0 auto;
+	}
+
+	.section__aside--right p {
+		right: 0;
+	}
+
+	.section__btn {
+		position: absolute;
+		top: 46.5%;
+		left: 0;
+
+		@include breakpoint-down(small-desktop) {
+			left: 20px;
+		}
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+}

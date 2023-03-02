@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	Entry
+\* ------------------------------------------------------------ */
+
+.entry {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 21px;
+
+	@include breakpoint-down(mobile) {
+		display: block;
+	}
+
+	.entry__title {
+		width: 42%;
+		text-align: right;
+		padding-top: 4px;
+
+		@include breakpoint-down(tablet) {
+			width: 30%;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 25px;
+			text-align: left;
+		}
+	}
+
+	.entry__content {
+		width: 52%;
+		padding-right: 24px;
+
+		@include breakpoint-down(tablet) {
+			width: 65%;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+}

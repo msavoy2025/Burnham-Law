@@ -1,0 +1,82 @@
+/* ------------------------------------------------------------ *\
+	Section Tabs
+\* ------------------------------------------------------------ */
+
+.section-tabs {
+	padding: 97px 0 40px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__inner {
+		padding: 78px 0 38px;
+		position: relative;
+		z-index: 5;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+		}
+
+		&:before {
+			content: '';
+			width: calc(100% - 240px);
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			border: 1px solid $c-dark;
+			pointer-events: none;
+
+			@include breakpoint-down(tablet) {
+				display: none;
+			}
+		}
+	}
+
+	.section__head {
+		text-align: center;
+		max-width: 544px;
+		margin: 0 auto 52px;
+	}
+
+	.section__head h6 {
+		margin-bottom: 52px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 38px;
+		}
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+	}
+
+	.section__body {
+		padding-bottom: 135px;
+
+		@include breakpoint-down(tablet) {
+			padding-bottom: 50px;
+		}
+	}
+
+	.section__foot {
+		text-align: center;
+		width: calc(100% - 240px);
+		margin: 0 auto;
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+		}
+	}
+
+	.section__foot h6 {
+		font-family: $ff-helvetica-display;
+		font-size: 12px;
+		letter-spacing: .32em;
+		font-weight: 700;
+	}
+}

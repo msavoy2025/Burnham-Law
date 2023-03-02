@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+	Section Articles
+\* ------------------------------------------------------------ */
+
+.section-articles {
+	.section__inner {
+		padding: 124px 62px 152px;
+
+		@include breakpoint-down(tablet) {
+			padding: 80px 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 50px 0;
+		}
+	}
+
+	.section__head {
+		margin: 0 -7px 107px;
+
+		@include breakpoint-down(tablet) {
+			margin: 0 0 70px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__head h2 {
+		font-size: 72px;
+		margin-bottom: 51px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__head p {
+		max-width: 390px;
+	}
+}

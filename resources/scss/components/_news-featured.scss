@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	News Featured
+\* ------------------------------------------------------------ */
+
+.news-featured {
+	margin-bottom: 74px;
+
+	@include breakpoint-down(mobile) {
+		margin-bottom: 35px;
+		border-bottom: 1px solid #1a1a1a;
+	}
+
+	h6 {
+		text-align: center;
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		color: $c-black;
+		margin-bottom: 33px;
+	}
+}

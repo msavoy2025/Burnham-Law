@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Image Fit
+\* ------------------------------------------------------------ */
+
+.image-fit {
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	display: block;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.image-fit--bottom {
+	background-position: center bottom;
+
+	img {
+		object-position: center bottom;
+	}
+}

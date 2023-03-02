@@ -1,0 +1,115 @@
+/* ------------------------------------------------------------ *\
+	Section Location Details
+\* ------------------------------------------------------------ */
+
+.section-location-details {
+	padding: 77px 0 90px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__content {
+		text-align: center;
+		width: 100%;
+		padding: 0 50px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	.section__content p {
+		max-width: 404px;
+		margin: 0 auto 21px;
+	}
+
+	.section__content p:last-child {
+		margin-bottom: 0;
+	}
+
+	.section__inner {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+
+		@include breakpoint-down(mobile) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.section__aside {
+		min-width: 212px;
+		width: 212px;
+		font-family: $ff-trade-gothic;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		padding-bottom: 3px;
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			order: 1;
+			text-align: center;
+		}
+	}
+
+	.section__aside strong {
+		font-weight: 800;
+		display: block;
+	}
+
+	.section__aside a:not([href^="tel"]) {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background: $c-dark;
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			transition: width .4s;
+		}
+
+		&:hover:after {
+			width: 0;
+		}
+	}
+
+	.section__aside--right {
+		text-align: right;
+		padding-bottom: 6px;
+
+		@include breakpoint-down(mobile) {
+			text-align: center;
+		}
+	}
+
+	.section__aside--left {
+		@include breakpoint-down(mobile) {
+			margin-bottom: 20px;
+		}
+	}
+
+	h1 {
+		margin-bottom: 36px;
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: .1em;
+		margin-bottom: 38px;
+
+		strong {
+			font-weight: 800;
+		}
+	}
+}

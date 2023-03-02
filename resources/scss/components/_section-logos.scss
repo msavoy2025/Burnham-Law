@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	Section Logos
+\* ------------------------------------------------------------ */
+
+.section-logos {
+	padding-bottom: 73px;
+	position: relative;
+	z-index: 5;
+
+	@include breakpoint-down(mobile) {
+		padding-bottom: 50px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		height: 181%;
+		z-index: 1;
+		background: url(../images/burnham-stripes.png) repeat center bottom/100px 75px;
+		pointer-events: none;
+	}
+
+	.shell {
+		z-index: 2;
+		position: relative;
+	}
+
+	.section__head {
+		text-align: center;
+		max-width: 1000px;
+		margin: 0 auto 99px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+}

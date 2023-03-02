@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------ *\
+	Section Get Started
+\* ------------------------------------------------------------ */
+
+.section-get-started {
+	padding: 77px 0 117px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__head {
+		text-align: center;
+		margin-bottom: 91px;
+	}
+
+	.section__body {
+		width: 69%;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+		}
+	}
+
+	.section__body h6 {
+		font-family: $ff-helvetica-display;
+		letter-spacing: .27em;
+	}
+
+	.section__creds {
+		padding: 25px 0 0;
+		width: 52%;
+		margin: 0 0 79px auto;
+
+		@include breakpoint-down(tablet) {
+			width: 65%;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+		}
+	}
+
+	.section__form {
+		padding-bottom: 70px;
+		padding-right: 28px;
+		position: relative;
+		margin-bottom: 55px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0 0 30px;
+			margin-bottom: 30px;
+		}
+
+		&:after {
+			content: '';
+			width: 54.5%;
+			height: 1px;
+			background: $c-dark;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			@include breakpoint-down(tablet) {
+				width: 65%;
+			}
+
+			@include breakpoint-down(mobile) {
+				width: 100%;
+			}
+		}
+	}
+
+	.section__rows > h4 {
+		font-size: 48px;
+		line-height: .75;
+		max-width: 52%;
+		padding-right: 40px;
+		margin: 0 0 37px auto;
+		letter-spacing: -.02em;
+
+		@include breakpoint-down(tablet) {
+			max-width: 65%;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			padding-right: 0;
+			font-size: 26px;
+		}
+	}
+}

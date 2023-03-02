@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	Section Related
+\* ------------------------------------------------------------ */
+
+.section-related {
+	padding: 80px 0;
+
+	@include breakpoint-down(mobile) {
+		padding: 25px 0 50px;
+	}
+
+	.section__body {
+		margin-bottom: 78px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------ *\
+	Link
+\* ------------------------------------------------------------ */
+
+.link {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: $ff-trade-gothic;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: .1em;
+	color: $c-dark;
+
+	@include breakpoint-down(mobile) {
+		font-size: 12px;
+	}
+
+	i {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
+		position: relative;
+		left: 0;
+		transition: all .4s;
+	}
+
+	.article-link {
+		text-decoration: none;
+		display: inline-block;
+		vertical-align: middle;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&:hover i {
+		left: 3px;
+	}
+}
+
+.link--rev {
+	i {
+		margin-left: 0;
+		margin-right: 5px;
+	}
+
+	&:hover i {
+		left: -3px;
+	}
+}
+
+.link--alt {
+	font-family: $ff-helvetica-display;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .27em;
+
+	@include breakpoint-down(mobile) {
+		letter-spacing: .15em;
+	}
+}

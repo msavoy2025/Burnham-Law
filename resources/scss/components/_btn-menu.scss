@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------ *\
+	Btn Menu
+\* ------------------------------------------------------------ */
+
+.btn-menu {
+	display: none;
+	height: 9px;
+	padding: 20px 0;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	appearance: none;
+	transform: translateY(-50%);
+	z-index: 65;
+	background: none;
+	border: none;
+
+	@include breakpoint-down(tablet) {
+		display: block;
+	}
+
+	&:focus {
+		outline: -webkit-focus-ring-color auto 0;
+	}
+
+	span {
+		position: relative;
+		display: block;
+		width: 25px;
+		height: 15px;
+		border-top: 3px solid $c-dark;
+		transition: all .3s linear;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background: $c-dark;
+			transition: all .3s linear;
+		}
+
+		&:before {
+			top: -12px;
+		}
+
+		&:after {
+			top: 6px;
+		}
+	}
+
+	&.active {
+		background-color: transparent;
+	}
+
+	&.active span {
+		border-color: transparent;
+	}
+
+	&.active span:before,
+	&.active span:after {
+		background: #fff;
+	}
+
+	&.active span:before {
+		transform: rotate(45deg) translate(3.5px, 9px);
+	}
+	&.active span:after {
+		transform: rotate(-45deg) translate(3.5px, -9px);
+	}
+}

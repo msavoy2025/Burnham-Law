@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	Richtext Entry
+\* ------------------------------------------------------------ */
+
+.richtext-entry {
+	> ul:not([class]),
+	> ol:not([class]) {
+		padding-left: 30px;
+
+		ol,
+		ul {
+			padding-left: 30px;
+		}
+	}
+
+	> blockquote {
+		border-left: 2px solid $c-base;
+		margin-left: 0;
+		padding: 0 0 0 16px;
+	}
+
+	> *.alignwide {
+		width: 100%;
+		max-width: 100%;
+		clear: both;
+	}
+
+	> *.aligncenter {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	> *.alignfull {
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+		width: auto;
+		padding: 0 20px;
+	}
+}

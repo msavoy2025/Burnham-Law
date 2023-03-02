@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------ *\
+	Section Cases
+\* ------------------------------------------------------------ */
+
+.section-cases {
+	position: relative;
+	z-index: 5;
+	padding-top: 195px;
+
+	@include breakpoint-down(mobile) {
+		padding-top: 130px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 150px);
+		background: $c-dark;
+		pointer-events: none;
+		z-index: -1;
+	}
+
+	&:after {
+		content: '';
+		width: 1px;
+		height: 80px;
+		background: $c-green;
+		position: absolute;
+		top: 39px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include breakpoint-down(mobile) {
+			top: 0;
+		}
+	}
+
+	.section__head {
+		text-align: center;
+		color: $c-white;
+		position: relative;
+		margin-bottom: 161px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__body {
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 1px;
+			height: 80px;
+			background: $c-green;
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+
+			@include breakpoint-down(mobile) {
+				height: 0;
+			}
+		}
+	}
+}

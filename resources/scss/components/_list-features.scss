@@ -1,0 +1,75 @@
+/* ------------------------------------------------------------ *\
+	List Features
+\* ------------------------------------------------------------ */
+
+.list-features {
+	padding-bottom: 19px;
+
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		font-family: $ff-trade-gothic;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+
+		@include breakpoint-down(tablet) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	strong {
+		font-size: 60px;
+		line-height: 1.1;
+		text-transform: uppercase;
+	}
+
+	small {
+		font-size: 29px;
+		position: relative;
+		margin-left: -15px;
+	}
+
+	li + li {
+		margin-top: 42px;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 0;
+		}
+	}
+
+	li {
+		@include breakpoint-down(tablet) {
+			width: 45%;
+
+			&:nth-child(n + 3) {
+				margin-top: 20px;
+			}
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+
+			&:nth-child(n + 2) {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	List Features Alt
+\* ------------------------------------------------------------ */
+
+.list-features--alt {
+	li + li {
+		margin-top: 37px;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 0;
+		}
+	}
+}

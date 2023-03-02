@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+	Is Dropdown Active
+\* ------------------------------------------------------------ */
+
+.is-dropdown-active {
+	.wrapper__inner {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.nav-dropdown {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.logo img {
+		opacity: 0;
+	}
+
+	.logo img + img {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header .logo,
+	.header .nav,
+	.header .header__actions {
+		pointer-events: visible;
+	}
+
+	.header .header__actions p {
+		color: $c-white;
+	}
+
+	.header {
+		pointer-events: none;
+		background-color: transparent;
+	}
+
+	.nav {
+		color: $c-white;
+	}
+
+	.nav .menu-item-has-children > a:after {
+		border-color: $c-white;
+	}
+}

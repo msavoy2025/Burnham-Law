@@ -1,0 +1,80 @@
+/* ------------------------------------------------------------ *\
+	Section Tile Alt
+\* ------------------------------------------------------------ */
+
+.section-tile-alt {
+	text-align: center;
+	padding: 108px 0 0;
+	position: relative;
+
+	@include breakpoint-down(mobile) {
+		padding-top: 50px;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: -157px;
+		left: 0;
+		width: 100%;
+		height: 335px;
+		background: url(../images/burnham-stripes.png) repeat center bottom/100px 75px;
+		pointer-events: none;
+	}
+
+	.section__inner {
+		position: relative;
+		padding-bottom: 115px;
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 50px;
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 70px;
+			left: calc(100% - 198px);
+			width: calc(50vw - 445px);
+			height: calc(100% - 70px);
+			background: url(../images/burnham-stripes.png) repeat center bottom/100px 75px;
+			pointer-events: none;
+		}
+
+		&:before {
+			left: auto;
+			right: calc(100% - 198px);
+		}
+	}
+
+	h2 {
+		font-size: 72px;
+		margin-bottom: 54px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+		}
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		margin-bottom: 54px;
+	}
+
+	p {
+		max-width: 390px;
+		margin: -6px auto 46px;
+	}
+
+	.section__entry {
+		position: relative;
+		z-index: 2;
+	}
+}

@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------ *\
+	Section About
+\* ------------------------------------------------------------ */
+
+.section-about {
+	padding: 70px 0 102px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__inner {
+		position: relative;
+	}
+
+	.section__content {
+		width: 300px;
+		text-align: center;
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: $c-black;
+
+		@include breakpoint-down(mobile) {
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: none;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.section__content h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		margin-bottom: 30px;
+	}
+
+	.section__columns {
+		display: flex;
+		justify-content: space-between;
+
+		@include breakpoint-down(mobile) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.section__columns ul {
+		margin: 0;
+		padding: 16px 0;
+		list-style: none outside none;
+		font-family: $ff-helvetica-display;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: .27em;
+		line-height: 1;
+		text-transform: uppercase;
+		color: $c-black;
+	}
+
+	.section__columns ul li + li {
+		margin-top: 44px;
+	}
+
+	.section__columns strong {
+		font-weight: 700;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.section__col {
+		width: calc(50% - 170px);
+		padding-left: 62px;
+		border-left: 1px solid $c-black;
+
+		@include breakpoint-down(tablet) {
+			padding-left: 20px;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			padding: 0 20px;
+			text-align: center;
+			border: none;
+		}
+	}
+
+	.section__col:nth-child(even) {
+		text-align: right;
+		padding-left: 10px;
+		padding-right: 73px;
+		border-left: none;
+		border-right: 1px solid $c-black;
+
+		@include breakpoint-down(tablet) {
+			padding-right: 20px;
+		}
+
+		@include breakpoint-down(mobile) {
+			text-align: center;
+			border: none;
+			padding: 0;
+		}
+	}
+
+	@include breakpoint-down(mobile) {
+		.section__col + .section__col {
+			margin-top: 12px;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+/* ------------------------------------------------------------ *\
+	Section Tile Content
+\* ------------------------------------------------------------ */
+
+.section-tile-content {
+	.section__inner {
+		position: relative;
+		z-index: 10;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.section__aside {
+		margin: 0 auto 0 0;
+		min-width: 190px;
+		width: 190px;
+		font-family: $ff-helvetica-display;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: .27em;
+		text-transform: uppercase;
+		position: relative;
+		opacity: .25;
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
+	.section__aside p {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 100%;
+		text-align: center;
+		writing-mode: vertical-rl;
+	}
+
+	.section__aside--right {
+		margin: 0 0 0 auto;
+	}
+
+	.section__aside--right p {
+		right: 0;
+	}
+
+	.section__content {
+		text-align: center;
+		width: 100%;
+		max-width: 784px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 680px;
+		padding: 57px 0 68px;
+
+		@include breakpoint-down(small-desktop){
+			max-width: calc(100vw - 420px);
+		}
+
+		@include breakpoint-down(mobile) {
+			min-height: 0;
+			padding: 50px 0;
+			max-width: 100%;
+		}
+	}
+
+	h2 {
+		margin-bottom: 33px;
+
+		@include breakpoint-down(mobile) {
+			margin: 40px 0;
+		}
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+
+		strong {
+			font-weight: 800;
+		}
+	}
+}

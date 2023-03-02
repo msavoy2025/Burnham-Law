@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------ *\
+	Section Form
+\* ------------------------------------------------------------ */
+
+.section-form {
+	padding: 125px 0 64px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__inner {
+		max-width: 790px;
+		margin: 0 auto;
+	}
+
+	.section__head {
+		text-align: center;
+		margin-bottom: 63px;
+	}
+
+	.section__head h2 {
+		margin-bottom: 56px;
+	}
+
+	.section__head p {
+		max-width: 404px;
+		margin: 0 auto 42px;
+	}
+
+	.section__head p strong {
+		font-family: $ff-helvetica-display;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: .27em;
+		text-transform: uppercase;
+	}
+
+	.section__body {
+		margin-bottom: 92px;
+	}
+
+	.section__foot {
+		max-width: 566px;
+		margin: 0 auto;
+		border-top: 1px solid $c-dark;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 49px;
+
+		@include breakpoint-down(mobile) {
+			flex-wrap: wrap;
+			padding-top: 30px;
+		}
+	}
+
+	.section__foot h6 {
+		font-family: $ff-trade-gothic;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: $c-black;
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+	}
+
+	.section__foot h6 strong {
+		font-weight: 800;
+	}
+
+	.section__foot h6:nth-child(even) {
+		text-align: right;
+
+		@include breakpoint-down(mobile) {
+			text-align: center;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Form Alt
+\* ------------------------------------------------------------ */
+
+.section-form--alt {
+	padding: 78px 0 92px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+}

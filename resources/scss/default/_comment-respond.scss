@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------ *\
+	Comment Respond
+\* ------------------------------------------------------------ */
+
+.comment-respond {
+	width: 100%;
+	padding-top: 30px;
+	border-top: 1px solid #363636;
+
+	h3 {
+		position: relative;
+	}
+
+	small {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	label {
+		display: inline-block;
+		padding-bottom: 4px;
+	}
+
+	input[type="text"],
+	textarea {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		background: #f7f7f7;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+	input[type="text"]:focus {
+		background-color: #fff;
+	}
+
+	input[type="text"]::-webkit-input-placeholder,
+	input[type="text"]::-moz-placeholder,
+	input[type="text"]:-ms-input-placeholder,
+	input[type="text"]::placeholder {
+		color: #777;
+	}
+
+	.required {
+		color: #e40000;
+	}
+	.comment-notes {
+		padding-top: 15px;
+	}
+
+	.form-submit input {
+		display: block;
+		width: 160px;
+		height: 40px;
+		border: 0;
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+		background: #363636;
+		cursor: pointer;
+		border-radius: 4px;
+	}
+}

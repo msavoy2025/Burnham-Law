@@ -1,0 +1,21 @@
+.cf-container-user-meta .cf-container__fields > .cf-field > .cf-field__head { position: relative !important; }
+
+#login:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	opacity: 0.2;
+	transform: translateX(-50%);
+	width: 100vw;
+	height: 181%;
+	z-index: -1;
+	background: url(../images/temp/section-callout-image-4.png) repeat center bottom;
+	pointer-events: none;
+}
+
+#nav,
+#backtoblog { display: inline-block; padding: 0 !important; margin: 20px 10px !important; }
+
+#nav a,
+#backtoblog a { color: #666 !important; font-weight: 700; }

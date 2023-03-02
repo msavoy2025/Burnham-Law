@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------ *\
+	Socials Alt
+\* ------------------------------------------------------------ */
+
+.socials-alt {
+	font-family: $ff-trade-gothic;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: .1em;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+
+	@include breakpoint-down(mobile) {
+		font-size: 12px;
+	}
+
+	p {
+		margin: 0;
+		padding-right: 25px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 54%;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-left: 12px solid $c-dark;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			transform: translateY(-50%);
+		}
+	}
+
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	li {
+		margin-left: 30px;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 20px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	@media (-ms-high-contrast: none), (-ms-high-contrast: active), (-moz-touch-enabled: 0), (hover) {
+	 	 a:hover {
+	 	 	color: $c-green;
+	 	 }
+	}
+}

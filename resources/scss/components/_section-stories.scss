@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	Section Stories
+\* ------------------------------------------------------------ */
+
+.section-stories {
+	padding: 42px 0;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__head {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding-right: 28px;
+		margin-bottom: 115px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			padding-right: 0;
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__head h2 {
+		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.section__head h6 {
+		max-width: 375px;
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		color: $c-black;
+	}
+}

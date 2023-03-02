@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------ *\
+	Plyr
+\* ------------------------------------------------------------ */
+
+.plyr--video {
+	background: none;
+}
+
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+	display: none;
+}
+
+.plyr {
+	cursor: pointer;
+}
+
+.plyr--video.plyr--stopped .plyr__video-wrapper,
+.plyr--video.plyr--stopped .plyr__controls {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .4s, visibility .4s;
+}
+
+.plyr--video .plyr__video-wrapper {
+	@include breakpoint-down(mobile) {
+		height: 668px;
+	}
+}
+
+.plyr--video.plyr--stopped .plyr__control--overlaid {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.plyr--video.plyr--playing .plyr__video-wrapper,
+.plyr--video.plyr--playing .plyr__controls {
+	opacity: 1;
+	visibility: visible;
+}
+
+.plyr--video + .video__content {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.plyr--video.plyr--stopped + .video__content {
+	opacity: 1;
+	visibility: visible;
+}

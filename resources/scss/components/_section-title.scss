@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Section Title
+\* ------------------------------------------------------------ */
+
+.section-title {
+	text-align: center;
+	padding: 75px 0 104px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		margin-bottom: 45px;
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+	}
+
+	h6 strong {
+		font-weight: 800;
+	}
+}

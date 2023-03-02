@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Testimonials
+\* ------------------------------------------------------------ */
+
+.testimonials {
+	margin: -20px;
+
+	@include breakpoint-down(tablet) {
+		margin: -10px;
+	}
+
+	& > ul {
+		list-style: none outside none;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	& > ul > li {
+		width: 33.33%;
+		padding: 20px;
+		display: flex;
+
+		@include breakpoint-down(tablet) {
+			padding: 10px;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+}

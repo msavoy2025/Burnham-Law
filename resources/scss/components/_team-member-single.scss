@@ -1,0 +1,166 @@
+/* ------------------------------------------------------------ *\
+	Team Member Single
+\* ------------------------------------------------------------ */
+
+.team-member-single {
+	padding: 40px 0 138px;
+	display: flex;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		flex-wrap: wrap;
+	}
+
+	.team__aside {
+		width: 33.33%;
+		padding-right: 78px;
+
+		@include breakpoint-down(tablet) {
+			width: 40%;
+			padding-right: 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	.team__aside .team__image {
+		display: none;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin-bottom: 30px;
+		}
+	}
+
+	.team__details {
+		padding-left: 3px;
+	}
+
+	.team__details > ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.team__details-list > li + li {
+		margin-top: 40px;
+	}
+
+	.team__details-list > li > ul {
+		margin: 0;
+		list-style: none outside none;
+		font-size: 16px;
+	}
+
+	.team__details-list > li > ul > li {
+		position: relative;
+		padding-left: 20px;
+
+		&:before {
+			content: '';
+			border-left: 6px solid $c-dark;
+			border-top: 4px solid transparent;
+			border-bottom: 4px solid transparent;
+			position: absolute;
+			top: 6px;
+			left: -2px;
+		}
+	}
+
+	.team__content {
+		width: 40.5%;
+		padding-left: 14px;
+		padding-top: 2px;
+
+		@include breakpoint-down(tablet) {
+			width: 60%;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	.team__title {
+		margin-bottom: 215px;
+		min-height: 150px;
+
+		@include breakpoint-down(tablet) {
+			min-height: 180px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 30px;
+			min-height: 0;
+		}
+	}
+
+	.team__title h1 {
+		font-size: 72px;
+		margin-bottom: 4px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 40px;
+		}
+	}
+
+	.team__title h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		color: #C2C2C2;
+	}
+
+	.team__title h6 strong {
+		color: $c-dark;
+	}
+
+	.team__image {
+		margin-bottom: 66px;
+	}
+
+	.team__image img {
+		filter: grayscale(100%);
+		transition: filter .4s;
+	}
+
+	h5 {
+		font-family: $ff-helvetica-display;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: .03em;
+		text-transform: none;
+		margin-bottom: 13px;
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		font-weight: 800;
+		letter-spacing: .1em;
+		color: $c-black;
+		margin-bottom: 21px;
+	}
+
+	.team__content .team__image {
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+}

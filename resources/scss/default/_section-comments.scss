@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Section Comments
+\* ------------------------------------------------------------ */
+
+.section-comments {
+	padding-top: 15px;
+
+	a {
+		text-decoration: none;
+	}
+
+	p {
+		padding-bottom: 18px;
+	}
+
+	ol,
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none outside none;
+	}
+
+	h3 {
+		position: relative;
+		padding: 0 0 10px;
+	}
+
+	h3 small {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

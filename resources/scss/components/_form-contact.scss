@@ -1,0 +1,115 @@
+/* ------------------------------------------------------------ *\
+	Form Contact
+\* ------------------------------------------------------------ */
+
+.form-contact {
+	margin-bottom: 31px;
+
+	h4 {
+		font-size: 48px;
+		line-height: .83;
+		margin-bottom: 24px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 26px;
+			line-height: 1;
+		}
+	}
+
+	& > p {
+		max-width: 78%;
+		margin-bottom: 29px;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
+		display: none;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield .ginput_container textarea,
+	.gform_wrapper .gform_body .gform_fields .gfield .ginput_container select,
+	.gform_wrapper .gform_body .gform_fields .gfield .ginput_container input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: $c-black;
+		border: 1px solid #1A1A1A;
+		padding: 0 22px;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield .ginput_container input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+		height: 57px;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield .ginput_container textarea {
+		height: 171px;
+		padding: 18px 22px;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_validation_error .gform_body .gform_fields .gfield.gfield_error {
+		margin-bottom: 10px !important;
+	}
+
+	.gform_wrapper.gform_wrapper .gform_footer {
+		width: 100%;
+		padding: 0;
+		margin-top: -5px;
+	}
+
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_footer input.button,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_footer input[type=submit],
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_page_footer input.button,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_page_footer input[type=submit] {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: $c-dark;
+		padding: 17px 20px 20px;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield--medium.gfield--radio,
+	.gform_wrapper .gform_body .gform_fields .gfield--medium.gfield--checkbox,
+	.gform_wrapper .gform_body .gform_fields .gfield--medium,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_validation_error .gform_body .gform_fields .gfield--medium.gfield_error {
+		width: 50%;
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+		}
+	}
+}
+
+.form-contact--alt {
+	margin-bottom: 0;
+
+	.gform_wrapper .gform_body .gform_fields {
+		margin: 0 -5px !important;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_validation_error .gform_body .gform_fields .gfield.gfield_error {
+		padding: 0 5px;
+	}
+
+	.gform_wrapper .gform_body .gform_fields .gfield,
+	.form-contact .gform_wrapper.gform_wrapper.gform_wrapper.gform_validation_error .gform_body .gform_fields .gfield.gfield_error {
+		margin-bottom: 12px !important;
+	}
+
+	.gform_wrapper.gform_wrapper .gform_footer {
+		margin-top: 0;
+	}
+
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_footer input.button,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_footer input[type=submit],
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_page_footer input.button,
+	.gform_wrapper.gform_wrapper.gform_wrapper.gform_wrapper .gform_page_footer input[type=submit] {
+		padding: 20px;
+	}
+}

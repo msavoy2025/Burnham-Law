@@ -1,0 +1,106 @@
+/* ------------------------------------------------------------ *\
+	Pagination
+\* ------------------------------------------------------------ */
+
+.paging {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+
+	@include breakpoint-down(mobile){
+		flex-wrap: wrap;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0 auto;
+		padding: 0 20px;
+
+		@include breakpoint-down(mobile){
+			width: 100%;
+			order: -1;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	ul li {
+		margin: 0 5px;
+
+		&:first-child{
+			@include breakpoint-down(mobile){
+				margin-left: 0;
+			}
+		}
+
+		&:last-child{
+			@include breakpoint-down(mobile){
+				margin-right: 0;
+			}
+		}
+	}
+
+	ul li.paging__spacer,
+	ul a {
+		background-color: #fff;
+		font-size: 14px;
+		color: #000;
+		width: 35px;
+		height: 35px;
+		display: block;
+		text-align: center;
+		line-height: 35px;
+		transition: all .4s;
+	}
+
+	ul a:hover,
+	ul li.is-current a {
+		color: #fff;
+		background-color: $c-base;
+	}
+
+	.paging__next,
+	.paging__prev {
+		font-size: 16px;
+		color: #000;
+		transition: all .4s;
+
+		&:hover,
+		&:hover {
+			color: $c-base;
+		}
+	}
+
+	.paging__next {
+		&:only-child {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+
+	.paging__prev {
+		&:only-child {
+			margin-right: auto;
+			margin-left: 0;
+		}
+	}
+
+	.paging__label,
+	.paging__first,
+	.paging__last,
+	.paging__prev,
+	.paging__next {
+		margin: 9px;
+	}
+}
+

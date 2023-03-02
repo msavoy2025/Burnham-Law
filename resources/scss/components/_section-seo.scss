@@ -1,0 +1,255 @@
+/* ------------------------------------------------------------ *\
+	Section Seo
+\* ------------------------------------------------------------ */
+
+.section-seo {
+	padding-top: 77px;
+
+	@include breakpoint-down(mobile) {
+		padding-top: 40px;
+	}
+
+	.section__head {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 88px;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__head-content {
+		width: 61.47%;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+		}
+	}
+
+	.section__head-content h1 {
+		margin-bottom: 98px;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.section__head-aside {
+		width: 31.24%;
+		padding-top: 65px;
+
+		@include breakpoint-down(large-desktop) {
+			padding-top: 5px;
+		}
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			padding-top: 40px;
+		}
+	}
+
+	.section__head-aside > strong {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		font-weight: 800;
+		line-height: 1.33;
+		letter-spacing: .1em;
+		color: $c-dark;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 18px;
+	}
+
+	.section__head-aside > h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.33;
+		letter-spacing: .1em;
+		color: $c-dark;
+		text-transform: uppercase;
+	}
+
+	.section__image {
+		position: relative;
+	}
+
+	.section__image-bg {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-top: 80.958%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.section__text {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		padding: 0 57px 52px;
+		color: $c-white;
+
+		@include breakpoint-down(tablet) {
+			padding: 0 30px 30px;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 15px;
+		}
+	}
+
+	.section__text h4 {
+		font-size: 48px;
+		max-width: 420px;
+		line-height: .85;
+		margin-bottom: 31px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 26px;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+	}
+
+	.section__text h4:last-child {
+		margin-bottom: 0;
+	}
+
+	.section__text a {
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		text-transform: uppercase;
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: .1em;
+		margin-left: 5px;
+	}
+
+	.section__text a span {
+		margin-right: 15px;
+	}
+
+	.section__group {
+		padding: 0 370px;
+		position: relative;
+
+		@include breakpoint-down(large-desktop) {
+			padding: 0 260px;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding: 0;
+			max-width: 550px;
+			margin: 0 auto;
+		}
+	}
+
+	.section__group + .section__group {
+		margin-top: 48px;
+	}
+
+	.section__testimonial {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 370px;
+		padding-right: 72px;
+
+		@include breakpoint-down(large-desktop) {
+			width: calc((100% - 550px)/2);
+			padding-right: 30px;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding: 0;
+			width: 100%;
+			position: relative;
+		}
+	}
+
+	.section__testimonial--right {
+		left: auto;
+		right: 0;
+		padding-right: 0;
+		padding-left: 30px;
+
+		@include breakpoint-down(tablet) {
+			padding-left: 0;
+		}
+	}
+
+	.section__body {
+		font-size: 19px;
+		letter-spacing: 0;
+
+		@include breakpoint-down(tablet) {
+			font-size: 16px;
+		}
+	}
+
+	.section__body h4 {
+		font-size: 48px;
+		line-height: .83;
+		margin-bottom: 44px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 26px;
+			line-height: 1;
+			margin-bottom: 25px;
+		}
+	}
+
+	.section__content {
+		max-width: 550px;
+		margin: 0 auto;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.section__content > ul {
+		list-style: none outside none;
+		margin-left: 0;
+	}
+
+	.section__content > ul li {
+		padding-left: 33px;
+		position: relative;
+
+		@include breakpoint-down(mobile) {
+			padding-left: 20px;
+		}
+
+		&:before {
+			content: '';
+			width: 3px;
+			height: 3px;
+			position: absolute;
+			top: 10px;
+			left: 3px;
+			background: $c-black;
+
+			@include breakpoint-down(mobile) {
+				top: 8px;
+			}
+		}
+	}
+}

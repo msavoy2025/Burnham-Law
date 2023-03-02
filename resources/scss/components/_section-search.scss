@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	Section Search
+\* ------------------------------------------------------------ */
+
+.section-search {
+	padding: 69px 0 80px;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 66px 0 80px;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 98px 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+}

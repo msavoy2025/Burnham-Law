@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	Btn Scroll Down
+\* ------------------------------------------------------------ */
+
+.btn-scroll-down {
+	appearance: none;
+	background: none;
+	border: none;
+	border-radius: 0;
+	font-family: $ff-helvetica-display;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .27em;
+	text-transform: uppercase;
+	color: $c-black;
+	position: relative;
+
+	@include breakpoint-down(small-desktop) {
+		font-size: 10px;
+	}
+
+	&:after {
+		content: '';
+		width: 17px;
+		height: 38px;
+		background: url(../images/icons/ico-arrow-down.svg) no-repeat center center/cover;
+		position: absolute;
+		top: 3px;
+		left: calc(100% + 6px);
+
+		@include breakpoint-down(small-desktop) {
+			width: 13px;
+			height: 29px;
+		}
+	}
+}

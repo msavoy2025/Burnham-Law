@@ -1,0 +1,130 @@
+/* ------------------------------------------------------------ *\
+	Tile Details
+\* ------------------------------------------------------------ */
+
+.tile-details {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 80px 0 60px;
+
+	@include breakpoint-down(mobile) {
+		padding-bottom: 20px;
+	}
+
+	&:before {
+		content: '';
+		width: 100%;
+		height: 346px;
+		background: url(../images/burnham-stripes.png) repeat center bottom/100px 75px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	.tile__logo {
+		margin-bottom: 35px;
+	}
+
+	.tile__logo img {
+		display: inline-block;
+		margin-bottom: 42px;
+	}
+
+	.tile__logo h6 {
+		letter-spacing: .32em;
+	}
+
+	.tile__head {
+		max-width: 960px;
+		margin: 0 auto 63px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.tile__head h2 {
+		margin-bottom: 84px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.tile__head h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		line-height: 1.33;
+		letter-spacing: .1em;
+	}
+
+	.tile__body {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	.tile__content {
+		text-align: center;
+		font-family: $ff-helvetica-display;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 1;
+		letter-spacing: .27em;
+		text-transform: uppercase;
+		color: $c-black;
+		margin-bottom: 20px;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1.3;
+		}
+	}
+
+	.tile__content span {
+		display: inline-block;
+		margin: 0 168px;
+		position: relative;
+
+		@include breakpoint-down(mobile) {
+			width: 40px;
+			margin: 0 auto;
+			display: block;
+		}
+
+		&:before {
+			content: '';
+			width: 130px;
+			height: 1px;
+			background: $c-black;
+			position: absolute;
+			top: 50%;
+			left: calc(100% + 20px);
+			transform: translateY(-50%);
+		}
+
+		&:after {
+			content: '';
+			width: 130px;
+			height: 1px;
+			background: $c-black;
+			position: absolute;
+			top: 50%;
+			right: calc(100% + 20px);
+			transform: translateY(-50%);
+		}
+	}
+
+	.tile__entry {
+		width: 100%;
+		max-width: 790px;
+		margin: 0 auto;
+		columns: 2;
+		column-gap: 120px;
+
+		@include breakpoint-down(mobile) {
+			columns: 1;
+		}
+	}
+}

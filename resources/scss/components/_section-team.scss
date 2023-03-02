@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------ *\
+	Section Team
+\* ------------------------------------------------------------ */
+
+.section-team {
+	padding: 78px 0 56px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__head {
+		text-align: center;
+		max-width: 660px;
+		padding-bottom: 74px;
+		margin: 0 auto 57px;
+		position: relative;
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 50px;
+			margin-bottom: 50px;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 100%;
+			background: #f1f1f1;
+			pointer-events: none;
+		}
+	}
+
+	.section__head h1 {
+		margin-bottom: 48px;
+	}
+
+	.section__head h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		margin-bottom: 37px;
+	}
+
+	.section__head p {
+		max-width: 390px;
+		margin: 0 auto;
+		font-size: 16px;
+	}
+
+	.section__head-inner {
+		margin-bottom: 53px;
+		position: relative;
+		z-index: 5;
+	}
+
+	.section__body {
+		position: relative;
+		z-index: 5;
+	}
+}

@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------ *\
+	Stories
+\* ------------------------------------------------------------ */
+
+.stories {
+	margin: -43px -18px;
+
+	@include breakpoint-down(mobile) {
+		margin: -15px;
+	}
+
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	li {
+		width: 33.33%;
+		padding: 43px 18px;
+		display: flex;
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			padding: 15px;
+		}
+	}
+}
+
+.story {
+	width: 100%;
+	min-height: 178px;
+	border-left: 1px solid $c-black;
+	padding: 0 33px 0 37px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@include breakpoint-down(tablet) {
+		padding: 0 10px 0 20px;
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+	}
+
+	h6 strong {
+		display: block;
+		opacity: .5;
+	}
+
+	.story__title {
+		margin-top: -4px;
+		margin-bottom: 26px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.story__content {
+		margin-bottom: -6px;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 0;
+		}
+	}
+}

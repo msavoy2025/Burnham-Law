@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+	Slider Titles
+\* ------------------------------------------------------------ */
+.slider-titles {
+	width: 100%;
+
+	.swiper-slide {
+		height: auto;
+		opacity: 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.swiper-slide-active {
+		opacity: 1 !important;
+	}
+}

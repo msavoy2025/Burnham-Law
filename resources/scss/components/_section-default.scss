@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Section Default
+\* ------------------------------------------------------------ */
+
+.section-default {
+	padding: 78px 0 125px;
+	background: #f1f1f1;
+
+	.section__content{
+		margin-bottom: 40px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.section__title {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Section Default 404 */
+
+.section-default--404 {
+	display: flex;
+	width: 100%;
+	text-align: center;
+
+	.section__shell {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.section__btn {
+		margin-top: 40px;
+	}
+}

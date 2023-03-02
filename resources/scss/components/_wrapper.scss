@@ -1,0 +1,48 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+	margin-top: 0 !important;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 529px;
+		background: #f1f1f1;
+		pointer-events: none;
+		z-index: -1;
+
+		@include breakpoint-down(mobile) {
+			height: 400px;
+		}
+	}
+
+	.wrapper__inner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+}
+
+body.admin-bar {
+	.wrapper {
+		.wrapper__inner {
+			min-height: calc( 100vh - 32px);
+
+			@include breakpoint-down(admin-bar){
+				min-height: calc( 100vh - 46px);
+			}
+		}
+	}
+}
+

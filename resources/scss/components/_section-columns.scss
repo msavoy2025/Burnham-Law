@@ -1,0 +1,98 @@
+/* ------------------------------------------------------------ *\
+	Section Columns
+\* ------------------------------------------------------------ */
+
+.section-columns {
+	padding: 186px 0 208px;
+	position: relative;
+
+	@include breakpoint-down(tablet) {
+		padding: 50px 0;
+	}
+
+	&:before {
+		content: '';
+		width: 1px;
+		height: calc(100% + 152px);
+		background: $c-dark;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
+	.section__inner {
+		display: flex;
+		justify-content: center;
+
+		@include breakpoint-down(tablet) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.section__col {
+		width: 50%;
+		text-align: right;
+		padding: 0 105px 0 10px;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			text-align: center;
+			padding: 0;
+		}
+	}
+
+	.section__col p {
+		margin: 0 0 0 auto;
+
+		@include breakpoint-down(tablet) {
+			margin: 0 auto;
+		}
+	}
+
+	.section__col + .section__col {
+		text-align: left;
+		padding: 0 10px 0 105px;
+
+		@include breakpoint-down(tablet) {
+			text-align: center;
+			padding: 0;
+			margin-top: 50px;
+		}
+	}
+
+	.section__col + .section__col p {
+		margin: 0;
+
+		@include breakpoint-down(tablet) {
+			margin: 0 auto;
+		}
+	}
+
+	h2 {
+		line-height: .75;
+		margin-bottom: 54px;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 35px;
+		}
+	}
+
+	h5 {
+		margin-bottom: 44px;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 30px;
+		}
+	}
+
+	p {
+		max-width: 345px;
+
+	}
+}

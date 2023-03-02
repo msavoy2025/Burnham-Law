@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------ *\
+	Section Text
+\* ------------------------------------------------------------ */
+
+.section-text {
+	text-align: center;
+	padding: 65px 0;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	h2 {
+		margin-bottom: 40px;
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		line-height: 1.72;
+		letter-spacing: .1em;
+		margin-bottom: 42px;
+	}
+
+	.section__content {
+		max-width: 900px;
+		margin: 0 auto 60px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.section__content p {
+		max-width: 390px;
+		margin: 0 auto;
+		color: $c-black;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Text Alt
+\* ------------------------------------------------------------ */
+
+.section-text-alt {
+	padding: 135px 0 115px;
+	text-align: center;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__inner {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 72px;
+		margin-bottom: 55px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+	}
+
+	h2 + p {
+		margin-top: 78px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 60px;
+		}
+	}
+
+	p + h2 {
+		margin-top: 78px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 60px;
+		}
+	}
+
+	p {
+		max-width: 405px;
+		margin: 0 auto 20px;
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic-bold;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: .1em;
+	}
+}

@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+  Fonts
+\* ------------------------------------------------------------ */
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3bbb33");
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src:  url('../fonts/webFonts/HelveticaNowDisplay-Regular/font.woff2') format('woff2'),
+		    url('../fonts/webFonts/HelveticaNowDisplay-Regular/font.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src:  url('../fonts/webFonts/HelveticaNowDisplay-XBd/font.woff2') format('woff2'),
+  		  url('../fonts/webFonts/HelveticaNowDisplay-XBd/font.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNowText-Regular';
+  src:  url('../fonts/webFonts/HelveticaNowText-Regular/font.woff2') format('woff2'),
+   	  	url('../fonts/webFonts/HelveticaNowText-Regular/font.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}

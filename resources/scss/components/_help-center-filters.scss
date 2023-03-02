@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------ *\
+	Help Center Filters
+\* ------------------------------------------------------------ */
+
+.help-center-filters {
+	font-family: $ff-trade-gothic;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.33;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+
+	@include breakpoint-down(small-desktop) {
+		font-size: 12px;
+	}
+
+	.filters__row {
+		text-align: center;
+		position: relative;
+	}
+
+	.filters__row + .filters__row {
+		margin-top: 70px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 50px;
+		}
+	}
+
+	.filters__row > p {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+
+		@include breakpoint-down(mobile) {
+			position: relative;
+			top: 0;
+			transform: none;
+			margin-bottom: 15px;
+		}
+
+		&:after {
+			content: '';
+			border-left: 12px solid $c-dark;
+			border-top: 7px solid transparent;
+			border-bottom: 7px solid transparent;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 12px;
+			position: relative;
+			top: 1px;
+
+			@include breakpoint-down(tablet) {
+				margin-left: 5px;
+			}
+
+			@include breakpoint-down(mobile) {
+				border: none;
+				border-top: 12px solid $c-dark;
+				border-left: 7px solid transparent;
+				border-right: 7px solid transparent;
+			}
+		}
+	}
+
+	.filters__row > p span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0 0 0 250px;
+		display: flex;
+		align-items: center;
+
+		@include breakpoint-down(small-desktop) {
+			padding: 0 0 0 200px;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding-left: 130px;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding-left: 0;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	ul li {
+		display: inline-block;
+		vertical-align: middle;
+		color: $c-black;
+		opacity: .25;
+		transition: opacity .4s;
+		margin: 0 20px;
+
+		@include breakpoint-down(small-desktop) {
+			margin: 0 8px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin: 0 10px 10px;
+		}
+	}
+
+	ul a {
+		text-decoration: none;
+		display: block;
+	}
+
+	ul li.current {
+		opacity: 1;
+	}
+
+	@media (-ms-high-contrast: none), (-ms-high-contrast: active), (-moz-touch-enabled: 0), (hover) {
+	 	 ul li:hover {
+	 	 	opacity: 1;
+	 	 }
+	}
+}

@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Is Nav Open
+\* ------------------------------------------------------------ */
+
+.is-nav-open {
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+
+	.wrapper__inner {
+		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
+		overflow: hidden;
+	}
+
+	.logo {
+		img {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		img + img {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.header .header__nav {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: visible;
+	}
+}

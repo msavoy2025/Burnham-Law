@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------ *\
+	Section Numbers
+\* ------------------------------------------------------------ */
+
+.section-numbers {
+	text-align: center;
+	padding: 138px 0 100px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+
+		br {
+			display: none;
+		}
+	}
+
+	h2 {
+		font-size: 72px;
+
+		@include breakpoint-down(large-desktop) {
+			font-size: 64px;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 48px;
+		}
+	}
+
+	h4 {
+		font-size: 48px;
+		line-height: .79;
+		letter-spacing: -.02em;
+		margin-bottom: 64px;
+
+		@include breakpoint-down(tablet) {
+			font-size: 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 32px;
+			margin-bottom: 30px;
+		}
+	}
+
+	h6 {
+		font-family: $ff-trade-gothic;
+		font-size: 14px;
+		letter-spacing: .1em;
+		margin-bottom: 38px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 25px;
+		}
+	}
+
+	.section__head {
+		margin-bottom: 103px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.section__body h6 {
+		margin-bottom: 48px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 25px;
+		}
+	}
+}

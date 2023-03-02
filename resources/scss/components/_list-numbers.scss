@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	List Numbers
+\* ------------------------------------------------------------ */
+
+.list-numbers {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: $ff-trade-gothic;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+
+	@include breakpoint-down(mobile) {
+		font-size: 12px;
+	}
+
+	ol {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+
+		@include breakpoint-down(mobile) {
+			flex-wrap: wrap;
+		}
+	}
+
+	li {
+		padding: 0 35px;
+
+		@include breakpoint-down(mobile) {
+			width: 50%;
+			padding: 0 10px;
+			margin-bottom: 25px;
+		}
+	}
+
+	strong {
+		font-size: 60px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 30px;
+		}
+	}
+
+	strong sub {
+		font-size: 30px;
+		line-height: 1;
+		vertical-align: baseline;
+		display: inline-block;
+		margin-left: 5px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 20px;
+		}
+	}
+}

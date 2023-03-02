@@ -1,0 +1,65 @@
+/* ------------------------------------------------------------ *\
+	Base WordPress CSS
+\* ------------------------------------------------------------ */
+
+.alignnone,
+.alignleft,
+.alignright,
+.aligncenter {
+	margin: 5px 15px #{$line-height-base}em;
+}
+.alignleft {
+	margin-left: 0;
+
+	@include breakpoint-down(mobile){
+		margin: 5px 0 10px;
+	}
+}
+.alignright {
+	margin-right: 0;
+
+	@include breakpoint-down(mobile){
+		margin: 5px 0 10px;
+	}
+}
+.alignnone {
+	margin-left: 0;
+	margin-right: 0;
+
+	@include breakpoint-down(mobile){
+		margin: 5px 0 10px;
+	}
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include breakpoint-down(mobile){
+		margin: 5px 0 10px;
+	}
+}
+
+.wp-caption {
+	position: relative;
+}
+
+.wp-caption img {
+	width: 100%;
+}
+
+.wp-caption-text {
+	padding: 8px;
+	font-size: .8em;
+	color: inherit;
+	background: transparent;
+	text-align: center;
+}
+
+.nocomments {
+	padding-top: 12px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+

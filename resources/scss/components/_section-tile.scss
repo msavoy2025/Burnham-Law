@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Section Tile
+\* ------------------------------------------------------------ */
+
+.section-tile {
+	padding: 70px 0 79px;
+
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
+	.section__inner {
+		position: relative;
+		z-index: 2;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 84px;
+			width: 303px;
+			height: 803px;
+			transform: translateY(-50%);
+			background: url(../images/burnham-stripes.png) repeat center bottom/100px 75px;
+			z-index: -1;
+			pointer-events: none;
+
+			@include breakpoint-down(tablet) {
+				height: calc(100% + 293px);
+			}
+
+			@include breakpoint-down(mobile) {
+				display: none;
+			}
+		}
+	}
+
+	.section__head {
+		text-align: center;
+		margin-bottom: 78px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.section__head h6 {
+		letter-spacing: .32em;
+	}
+}
