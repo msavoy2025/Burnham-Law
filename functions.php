@@ -1,6 +1,6 @@
 <?php
 define( 'CRB_THEME_DIR', dirname( __FILE__ ) . DIRECTORY_SEPARATOR );
-
+//Testing Git Updates
 # Enqueue JS and CSS assets on the front-end
 add_action( 'wp_enqueue_scripts', 'crb_enqueue_assets' );
 function crb_enqueue_assets() {
